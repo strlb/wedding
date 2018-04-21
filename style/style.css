@@ -4,13 +4,25 @@ html, body {
     background-color: rgb(208, 170, 243);
     /* overflow:hidden; */
 }
-  #welcome {
-    background-image: url("http://www.phuketdreamweddings.com/blog/wp-content/uploads/2017/03/Romantic-Beach-Wedding-Destinations-1180x705.jpg");
+@media (min-width: 799px){
+     #welcome {
+    background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/6954wide.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+} 
+}
+@media (max-width: 800px){
+    #welcome {
+   background-image: url("http://www.phuketdreamweddings.com/blog/wp-content/uploads/2017/03/Romantic-Beach-Wedding-Destinations-1180x705.jpg");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+} 
 }
 
 .pages{
