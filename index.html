@@ -6,61 +6,34 @@
   <meta http-equiv='cache-control' content='no-cache' />  
   <title>A&hearts;A</title>
   <link href='style/style.css' rel='stylesheet'>
+  <link href='fullPage/jquery.fullPage.css' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="fullPage/jquery.fullPage.js"></script>
 <script>
 $(document).ready(function(){
-
+  $('#fullpage').fullpage();
 //navigation with for arrows
-$(".link").click(function(){
-  let anchor;
-  switch ($(this).attr('key')) {
-    case '0':
-      anchor='#page_1';
-      break;
-    case '1':
-      anchor='#welcome';
-      break;
-    case '2':
-      anchor='#page_2';
-      break;
-    case '3':
-      anchor='#page_3';
-      break;
-    default:
-      break;
-  }
-  $(document.body).animate({
-    'scrollTop':$(anchor).offset().top
-}, 100);
-})
-
-
 
 });
 </script>
 </head>
 <body>
-  <div id="welcome">
-      <div class="hero-image">
-          <div class="hero-text">
-            <h1 style="font-size:50px">A + A</h1>
-            <p><a key=0 class="link">GO</a></p>
-          </div>
+    <div id="fullpage">
+        <div class="section">
+            <div id="welcome">
+                <div id="logo">
+                    <img id="logo" src="style/img/logo(2).png">
+                </div>
+            </div>
         </div>
-  </div>
-  <div class="pages" id="page_1">
-      <p>Page 1</p>
-    <p><a key=1 class="link">Back on Welcome!</a></p>
-    <p><a key=2 class="link">GO on Page 2!</a></p>
-  </div>
-  <div class="pages" id="page_2">
-      <p>Page 2</p>
-    <p><a key=0 class="link">Back on Page 1</a></p>
-    <p><a key=3 class="link">GO on Page 3</a></p>
-  </div>
-  <div class="pages" id="page_3">
-      <p>Page 3</p>
-    <p><a key=2 class="link">Back on Page 2</a></p>
-  </div>
+        <div class="section">Some section</div>
+        <div class="section">
+            <div class="slide"> Slide 1 </div>
+            <div class="slide"> Slide 2 </div>
+            <div class="slide"> Slide 3 </div>
+            <div class="slide"> Slide 4 </div>
+          </div>
+        <div class="section">Some section</div>
+      </div>
 </body>
 </html>
