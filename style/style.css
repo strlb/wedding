@@ -1,34 +1,218 @@
 html, body {
     height: 100%;
     margin: 0;
-    /* background-color: rgb(208, 170, 243); */
-    /* overflow:hidden; */
+    background-color: white;
+    overflow:hidden;
 }
+
+/*-----Welcome----*/
      #welcome {
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFV_LFJO9AbnDvf2-mKpOs3hAAlimS69iHGh2uRPnFl4wlz9F"); */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-} 
-#logo{
-    margin-left: auto; 
-    margin-right: auto;
-    width: 250px;
-    height: 302px;
 }
-/* @media (max-width: 800px){
-    #welcome {
-   background-image: url("http://www.phuketdreamweddings.com/blog/wp-content/uploads/2017/03/Romantic-Beach-Wedding-Destinations-1180x705.jpg");
-   height: 100%;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative;
-} 
-} */
+
+#logo{
+    font-family: 'Oleo Script';
+    font-size: 40px;
+    color:#f5e2ed;
+    text-align: center;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+@media (max-width: 620px) {
+    #logo{
+        padding-top: 20%;
+    }
+}
+/* ====================  */
+
+#welcome {
+    background-image: url("http://jakartasearch.com/wp-content/uploads/2018/01/free-outdoor-wedding-venues-northern-ca-2-fresh-venue-goals-victoria-carlson-lindsay-eugene-redwoods-northern-of-free-outdoor-wedding-venues-northern-ca-2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
 
 .pages{
     min-height: 100%;
-};
+}
+/*--------------*/
+/*      About page       */
+#about {
+    background-color:#f7f3f5;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#about_title{
+    text-align: center;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+#about_title p{
+    font-family: 'Lobster';
+    font-size: 40px;
+    color: #422b1f;
+}
+#about_body{
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    line-height: 1.5;
+}
+#about_body p{
+    font-family: 'Lobster';
+    font-size: 20px;
+    color: #422b1f;
+}
+#about_time{
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.time_round{
+    border:5px solid #422b1f;
+    display: flex;
+    flex-direction:column;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-family: 'Lobster';
+    font-size: 25px;
+    line-height: 1;
+    text-align: center;
+    color:white;
+    background-image: url("https://previews.123rf.com/images/romasph/romasph1307/romasph130700204/20971906-radial-cracks-of-sawed-old-wood-macro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.time_span{
+    padding-top: 33%;
+}
+/* Time Line */
+#timeline {
+    display: flex;
+    background-color: #031625;
+  }
+  #timeline:hover .tl-item {
+    width: 23.3333%;
+  }
+  
+  .tl-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    min-height: 600px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease;
+  }
+  .tl-item:before, .tl-item:after {
+    transform: translate3d(0, 0, 0);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .tl-item:after {
+    background: rgba(3, 22, 37, 0.85);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  .tl-item:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .tl-item:hover {
+    width: 30% !important;
+  }
+  .tl-item:hover:after {
+    opacity: 0;
+  }
+  .tl-item:hover:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) translateY(0);
+    transition: opacity 1s ease, transform 1s ease 0.25s;
+  }
+  .tl-item:hover .tl-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.75s ease 0.5s;
+  }
+  .tl-item:hover .tl-bg {
+    filter: grayscale(0);
+  }
+  
+  .tl-content {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 55%;
+    opacity: 0;
+  }
+  .tl-content h1 {
+    font-family: 'Lobster';
+    text-transform: uppercase;
+    color: #422b1f;
+    background-color: #f7f3f5;
+    border-radius: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    font-size: 1.44rem;
+    font-weight: normal;
+  }
+  .tl-content p {
+    line-height: 1.5;
+    padding-top: 2%;
+    font-family: 'Philosopher';
+  }
+  
+  .tl-year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+  }
+  .tl-year p {
+    font-family: 'Lobster';
+    font-size: 1.728rem;
+    line-height: 0;
+  }
+  
+  .tl-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+  }
+;

@@ -9,31 +9,166 @@
   <link href='fullPage/jquery.fullPage.css' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="fullPage/jquery.fullPage.js"></script>
+<!-- For day scrolling -->
+    <link rel="stylesheet" href="time/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="time/css/style.css"> <!-- Resource style -->
+	<script src="time/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="time/js/jquery.mobile.custom.min.js"></script>
+    <script src="time/js/main.js"></script> <!-- Resource jQuery -->
+<!--===================-->
+<!--        For Form         -->
+    <link rel="stylesheet" href="form/style.css"> <!-- Resource style -->
+	<script src="form/script.js"></script> <!-- Modernizr -->
+<!-- ======================= -->
+<!-- Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
+<!-- ======================= -->
 <script>
 $(document).ready(function(){
   $('#fullpage').fullpage();
-//navigation with for arrows
-
 });
 </script>
+<script src="script/time.js"></script>
 </head>
-<body>
-    <div id="fullpage">
-        <div class="section">
+<body onload="time()">
+     <div id="fullpage">
+        <div class="section" >
             <div id="welcome">
                 <div id="logo">
-                    <img id="logo" src="style/img/logo(2).png">
+                    <!-- <img id="logo" src="style/img/04.jpg"> -->
+                    <p>&nbsp;&nbsp;Andrey & Anastasia</p>
+                    </br>
+                    <p>07.07</p>
                 </div>
             </div>
         </div>
-        <div class="section">Some section</div>
+        <div class="section" >
+            <div id="about">
+                <div id='about_title'>
+                    <p> Дорогие родные и близкие!</p>
+                </div>
+                <div id='about_body'>
+                    <p>Совсем скоро, в нашей жизни произойдет одно из самых важных 
+                        событий, свидетелями которого мы просим вас быть и разделить 
+                        радость этого дня вместе с нами.Будем очень рады видеть вас 
+                        на праздничном банкете в честь нашего бракосочетания.
+                    </p>  
+                </div>
+                <div id='about_time'>
+                    <div class='time_round'>
+                        <span id='time_days' class='time_span'></span><span>дней</span>
+                    </div>
+                    <div class='time_round'>
+                        <span id='time_hours' class='time_span'></span><span>часов</span>
+                    </div>
+                    <div class='time_round'>
+                        <span id='time_minutes' class='time_span'></span><span>минут</span>
+                    </div>
+                    <div class='time_round'>
+                        <span id='time_seconds' class='time_span'></span><span>секунд</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id='day_time'>
+            <section id="timeline">
+                <div class="tl-item">
+                    
+                    <div class="tl-bg" style="background-image: url(http://sf.co.ua/13/03/wallpaper-2032206.jpg)"></div>
+                    
+                    <div class="tl-year">
+                    <p class="f2 heading--sanSerif">16:00</p>
+                    </div>
+                
+                    <div class="tl-content">
+                    <h1>Время прибытия</h1>
+                    <p>Гости прибывают, располагаются, готовятся к вечеру и перекусывают.</p>
+                    </div>
+                
+                </div>
+                
+                <div class="tl-item">
+                    
+                    <div class="tl-bg" style="background-image: url(https://assets.marthastewartweddings.com/styles/wmax-520-highdpi/d51/honor-jay-wedding-connecticut-ceremony-0689-d112238/honor-jay-wedding-connecticut-ceremony-0689-d112238_vert.jpg?itok=zwsQkRAv)"></div>
+                    
+                    <div class="tl-year">
+                    <p class="f2 heading--sanSerif">17:00</p>
+                    </div>
+                
+                    <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Начало регистрации</h1>
+                    <p>Начинается церемония на берегу реки. После, которой могут выпить шампанское и пофотографироваться с молодоженами.</p>
+                    </div>
+                
+                </div>
+                
+                <div class="tl-item">
+                    
+                    <div class="tl-bg" style="background-image: url(https://i.pinimg.com/originals/a5/66/4e/a5664e050891d8bdd2f748de5cde50c1.jpg)"></div>
+                    
+                    <div class="tl-year">
+                    <p class="f2 heading--sanSerif">17:30</p>
+                    </div>
+                
+                    <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Начало банкета</h1>
+                    <p>Гости рассаживаются и начинается основная часть вечера</p>
+                    </div>
+                
+                </div>
+                
+                <div class="tl-item">
+                    
+                    <div class="tl-bg" style="background-image: url(http://3.bp.blogspot.com/-P479MPIbWPw/UCQW3FmtYvI/AAAAAAAACoY/6O-0siKqDjU/s1600/bonfire.jpg)"></div>
+                    
+                    <div class="tl-year">
+                    <p class="f2 heading--sanSerif">23:00</p>
+                    </div>
+                
+                    <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Окончание вечера</h1>
+                    <p>Основная часть подходит к концу, но вечер еще не окончен.</p>
+                    </div>
+                
+                </div>
+            </section>     
+        </div>
         <div class="section">
-            <div class="slide"> Slide 1 </div>
-            <div class="slide"> Slide 2 </div>
-            <div class="slide"> Slide 3 </div>
-            <div class="slide"> Slide 4 </div>
-          </div>
-        <div class="section">Some section</div>
+                
+        </div>
+        <div class="section">
+            <div class='card'>
+                <div class='cardTitle'>
+                    Форма
+                </div>
+                <div class='cardContent'>
+                        <form>
+                                <h1>to: Sukhov</h1>
+                              
+                                <div id="from">
+                                  <label for="name">from:</label>
+                                  <input type="text" id="name" name="user_name">
+                                </div>
+                              
+                                <div id="reply">
+                                  <label for="mail">reply:</label>
+                                  <input type="email" id="mail" name="user_email">
+                                </div>
+                              
+                                <div id="message">
+                                  <label for="msg">Your message:</label>
+                                  <textarea id="msg" name="user_message"></textarea>
+                                </div>
+                               
+                                <div class="button">
+                                  <button type="submit">Send your message</button>
+                                </div>
+                              </form>
+                </div>
+            </div>
+        </div>
       </div>
 </body>
 </html>
