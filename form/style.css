@@ -1,183 +1,250 @@
-@mixin grid($column) {
-	  width:(100% / 12) * $column;
-	  margin:0 auto;
+#form_answer{
+	background-image: url("https://avatars.mds.yandex.net/get-pdb/25978/15161c4e-02e3-47d0-9acb-d33f08b6686c/orig");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
-	  -webkit-transition: $attr $time $curve;
-	  -moz-transition: $attr $time $curve;
-	  -o-transition: $attr $time $curve;
-	  -ms-transition: $attr $time $curve;
-	  transition: $attr $time $curve;
+.container, fieldset, .wrapper, .steps, ul{
+	background-color: rgb(245, 245, 245, 0.8) !important;
 }
-
-@mixin lato-1 {font-family: 'Lato', sans-serif; font-weight:100;}
-@mixin lato-1-i {@include lato-1; font-style:italic;}
-
-@mixin lato-3 {font-family: 'Lato', sans-serif; font-weight:300;}
-@mixin lato-3-i {@include lato-3; font-style:italic;}
-
-@mixin lato-4 {font-family: 'Lato', sans-serif; font-weight:400;}
-@mixin lato-4-i {@include lato-4; font-style:italic;}
-
-@mixin lato-7 {font-family: 'Lato', sans-serif; font-weight:700;}
-@mixin lato-7-i {@include lato-7; font-style:italic;}
-
-@mixin lato-9 {font-family: 'Lato', sans-serif; font-weight:900;}
-@mixin lato-9-i {@include lato-9; font-style:italic;}
-
-
-
-$blue:#313A3D;
-$orange:#FD9638;
-$dark-orange:darken($orange, 20%);
-$grey:#B6B6B6;
-$light-grey:lighten($grey, 15%);
-
-$background:#efefef;
-$field-color:#E8E9EA;
-
-
-
-
-
-body {
-	  background:$background;
-	  font-size:62.5%;
-	  @include lato-3;
-	  color:$grey;
-
-  section {
-	    background:white;
-    margin:60px auto 120px;
-    border-top:15px solid $blue;
-    text-align:center;
-  	  padding:50px 0 110px;
-    width:80%;
-    max-width:1100px;
-    
-    h1 {
-      margin-bottom:40px;
-      font-size:4em;
-      text-transform:uppercase;
-      @include lato-1;
-    }
-  }
+a{
+  text-decoration: none;
+}
+#form_answer h3{
+	padding-top: 1%;
+	font-family: 'Lobster';
+	font-size: 40px;
+	color: #422b1f;
+}
+#form_answer p, h4{
+	font-family: 'Philosopher';
+	font-size: 20px;
+	color: #422b1f;
 }
 
+#your_wish{
+	width: 100%;
+	height:100%;
+	padding:10px 10px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+	font-family: 'Philosopher';
+	font-size: 16px;
+}
 
-form {
-		  @include grid(7);
+fieldset{
+  margin: 0;
+	padding: 0;
+  border: none;
+}
 
-		  .field {
-			    width:100%;
-			    position:relative;
-			    margin-bottom:15px;
+/* GRID */
 
-    			$hover-label-width:18%;
-			    $placeholder-bumper:1.5%;
-			    $label-padding:18px;
+.twelve { width: 100%; }
+.eleven { width: 91.53%; }
+.ten { width: 83.06%; }
+.nine { width: 74.6%; }
+.eight { width: 66.13%; }
+.seven { width: 57.66%; }
+.six { width: 49.2%; }
+.five { width: 40.73%; }
+.four { width: 32.26%; }
+.three { width: 23.8%; }
+.two { width: 15.33%; }
+.one { width: 6.866%; }
 
-			    label {
-				      text-transform: uppercase;
-				      position:absolute;
-				      top:0;
-				      left:0;
-				      background:$blue;
-				      width:100%;
-				      padding:($label-padding + 0px) 0;
-				      font-size: 1.45em;
-				      letter-spacing: 0.075em;
+/* COLUMNS */
 
-				      @include ease(333ms);
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 0 1.6%;
+}
 
-				      + span {
-					        font-family: 'SSStandard';
-					        opacity: 0;
-					        color:white;
-				        	display: block;
-					        position:absolute;
-					        top: 12px;
-					        left: 7%;
-					        font-size: 2.5em;
-					        text-shadow:1px 2px 0 $dark-orange;
+.col:first-of-type {
+  margin-left: 0;
+}
 
-					        @include ease(333ms);
-			      	}
-			    }
+.container{
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+	border-radius: 5px;
+}
 
-    			
-		    	input[type="text"],
-			    textarea {
-				      border:none;
-				      background:$field-color;
-				      width:100% - $hover-label-width - $placeholder-bumper;
-				      margin:0;
-				      padding:$label-padding 0;
-				      padding-left:$hover-label-width + $placeholder-bumper;
-				      color:$blue;
-				      font-size: 1.4em;
-				      letter-spacing: 0.05em;
-				      text-transform: uppercase;
+.row{
+	padding: 20px 10px;
+}
 
-				      &#msg {
-					        height: 18px;
-					        resize: none;
-					        @include ease(333ms);
-				      }
+/* CLEARFIX */
 
-      				
-				      &:focus,
-				      &.focused {
-					        outline:none;
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
 
-        					&#msg {
-						          padding-bottom:150px;
-					        }
+.cf:after {
+    clear: both;
+}
 
-        					+ label {
-						          width:$hover-label-width;
-						          background:$orange;
-						          color:$blue;
-					        }
-				      }
+.cf {
+    *zoom: 1;
+}
 
-				      &.focused {
-					        + label {
-						          color: $orange;
-					        }
-				      }
-			    }
+.wrapper{
+  width: 100%;
+  margin: 30px 0;
+}
 
-			    &:hover {
-				      label {
-					        width:$hover-label-width;
-					        background:$blue;
-					        color:white;
-				      }
-			    }
-		  }
+/* STEPS */
 
-		  input[type="submit"] {
-			    background:$orange;
-			    color:white;
-			    -webkit-appearance: none;
-			    border: none;
-			    text-transform: uppercase;
-    position:relative;
-		    padding: 13px 50px;
-		    font-size: 1.4em;
-		    letter-spacing: 0.1em;
-		    @include lato-3;
-		    @include ease;
-        
-    			&:hover {
-				      background:$blue;
-				      color:$orange;
-			    }
+.steps{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-    			&:focus {
-				      outline:none;
-				      background:$dark-orange;
-			    }
-		  }
-	}
+
+.steps li{
+  display: inline-block;
+  margin: 20px;
+  color: #ccc;
+  padding-bottom: 5px;
+}
+
+.steps li.is-active{
+  /* border-bottom: 1px solid #3498db; */
+  color:#422b1f;
+}
+
+/* FORM */
+
+.form-wrapper .section_form{
+  padding: 0px 0px 30px 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* background-color: #fff; */
+  opacity: 0;
+  -webkit-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  min-height: 300px
+}
+
+.form-wrapper .section_form h3{
+  margin-bottom: 30px;
+}
+
+.form-wrapper .section_form.is-active{
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.form-wrapper .button, .form-wrapper .submit{
+  background-color: #422b1f;
+  /* display: inline-block; */
+	padding: 22px 34px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px !important;
+  font-family: 'Philosopher' !important;
+  position: absolute;
+	bottom: 0px;
+	width:100%;
+	/* border-radius:5px; */
+}
+
+.form-wrapper{
+  border: none;
+  outline: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="password"]{
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  /* background-color: #f1f1f1; */
+  border: none;
+	width: 70%;
+  outline: none;
+  font-size: 20px !important;
+  font-family: 'Philosopher' !important;
+}
+
+.form-wrapper input[type="radio"]{
+  display: none;
+}
+
+.form-wrapper input[type="radio"] + label{
+  display: block;
+  border: 1px solid #422b1f;
+	background-color: rgb(245, 245, 245, 0.8);
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+	position: relative;
+	border-radius: 5px;
+}
+
+.form-wrapper input[type="radio"] + label:before{
+  content: "✔";
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+	border-radius: 100%;
+  background-color: #422b1f;
+  color: #fff;
+  display: none;
+}
+
+.form-wrapper input[type="radio"]:checked + label:before{
+  display: block;
+}
+
+.form-wrapper input[type="radio"] + label h4{
+  margin: 15px;
+  color: #422b1f;
+}
+
+.form-wrapper input[type="radio"]:checked + label{
+  border: 1px solid #422b1f;
+	background-color: #422b1f;
+}
+
+.form-wrapper input[type="radio"]:checked + label h4{
+	color: white;
+}
