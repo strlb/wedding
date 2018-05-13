@@ -4,9 +4,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#form_answer::after{
-	opacity: 0.8;
-}
 .container, fieldset, .wrapper, .steps, ul{
 	background-color: rgb(245, 245, 245, 0.8) !important;
 }
