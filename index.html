@@ -25,9 +25,13 @@
 <link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
 <!-- ======================= -->
+<!-- Яндекс карта -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="script/map.js" type="text/javascript"></script>
+<!-- ============ -->
 <script>
 $(document).ready(function(){
-  $('#fullpage').fullpage();
+    $('#fullpage').fullpage();
 });
 </script>
 <script src="script/time.js"></script>
@@ -39,8 +43,7 @@ $(document).ready(function(){
                 <div id="logo">
                     <!-- <img id="logo" src="style/img/04.jpg"> -->
                     <p>&nbsp;&nbsp;Andrey & Anastasia</p>
-                    </br>
-                    <p>07.07</p>
+                    <p></br>07.07</p>
                 </div>
             </div>
         </div>
@@ -136,36 +139,83 @@ $(document).ready(function(){
             </section>     
         </div>
         <div class="section">
+            <div id="how_come">
+                <div id="map" style="width:50%; height:100%"></div>
+                <div id='road_info'>
+                    <div id="car">
+                        <div class='shadow'>
+                            <div class='how_info'>
+                                <p>На машине</p>
+                                </br>
+                                <p>Адрес места проведения: Нижегородский район, д. Демаки</p>
+                                </br>
+                                <p>Праздник продлится 2 дня, так что смело садитесь за руль!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bus">
+                        <div class='shadow'>
+                            <div class='how_info'>
+                                <p>На электричке</p>
+                                </br>
+                                <p>Вы можете приехать на электричке. Со станции вас заберет заказанный транспорт.</p>
+                                </br>
+                                <p>Однако мы надеемся, что машин хватит на всех)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 
         </div>
-        <div class="section">
-            <div class='card'>
-                <div class='cardTitle'>
-                    Форма
-                </div>
-                <div class='cardContent'>
-                        <form>
-                                <h1>to: Sukhov</h1>
-                              
-                                <div id="from">
-                                  <label for="name">from:</label>
-                                  <input type="text" id="name" name="user_name">
-                                </div>
-                              
-                                <div id="reply">
-                                  <label for="mail">reply:</label>
-                                  <input type="email" id="mail" name="user_email">
-                                </div>
-                              
-                                <div id="message">
-                                  <label for="msg">Your message:</label>
-                                  <textarea id="msg" name="user_message"></textarea>
-                                </div>
-                               
-                                <div class="button">
-                                  <button type="submit">Send your message</button>
-                                </div>
-                              </form>
+        <div class="section" id='form_answer'>
+            <div class="container">
+                <div class="wrapper">
+                    <ul class="steps">
+                    <li class="is-active">&hearts;</li>
+                    <li>&hearts;</li>
+                    <li>&hearts;</li>
+                    </ul>
+                    <form class="form-wrapper">
+                    <fieldset class="section_form is-active">
+                        <h3>Подтвердите присутствие</h3>
+                        <input type="text" name="name" id="name" placeholder="Имя">
+                        <input type="text" name="surname" id="surname" placeholder="Фамилия">
+                        <div class="button">Далее</div>
+                    </fieldset>
+                    <fieldset class="section_form">
+                        <h3>Как будете добираться?</h3>
+                        <div class="row cf">
+                        <div class="four col">
+                            <input type="radio" name="r1" id="r1" checked>
+                            <label for="r1">
+                            <h4>На своей машине</h4>
+                            </label>
+                        </div>
+                        <div class="four col">
+                            <input type="radio" name="r1" id="r2"><label for="r2">
+                            <h4>Bla-Bla Car</h4>
+                            </label>
+                        </div>
+                        <div class="four col">
+                            <input type="radio" name="r1" id="r3"><label for="r3">
+                            <h4>На электричке</h4>
+                            </label>
+                        </div>
+                        </div>
+                        <div class="button">Далее</div>
+                    </fieldset>
+                    <fieldset class="section_form">
+                        <h3>Есть пожелания?</h3>
+                        <textarea id='your_wish'></textarea>
+                        <div class="button submit">Отправить</div>
+                    </fieldset>
+                    <fieldset class="section_form">
+                        <h3>Спасибо за ответ!</h3>
+                        <p>Ждем вас на нашем торжестве.</p>
+                        <div class="button">Повторить</div>
+                    </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
