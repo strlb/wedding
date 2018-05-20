@@ -62,7 +62,7 @@ html, body {
     color: #422b1f;
 }
 #about_time{
-    padding-top: 15%;
+    padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
@@ -71,7 +71,7 @@ html, body {
     justify-content: space-between;
 }
 .time_round{
-    border:5px solid #422b1f;
+    border:8px solid #422b1f;
     display: flex;
     flex-direction:column;
     width: 150px;
@@ -89,6 +89,87 @@ html, body {
 }
 .time_span{
     padding-top: 33%;
+}
+/*For Guests*/
+#guests{
+    background-image: url('');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#guests_title{
+    font-family: 'Lobster';
+    font-size: 40px;
+    color:#422b1f;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    padding-top:10px;
+}
+#guests_body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    vertical-align: middle;
+}
+.guests_text{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.for_middle{
+    height: 100%;
+    width: 33%;
+}
+.guests_text p{
+    font-family: 'Lobster';
+    font-size: 20px;
+    text-align: center;
+}
+.brown_line{
+    color:#f5e2ed;
+    background-color: rgb(66, 43, 31, 0.8);
+}
+.guests_icon{
+    height: 100%;
+    width: 20%;
+    /* border-radius: 50% */ 
+}
+#icon_img{
+    width: 180px;
+    height:180px;
+	height: auto;
+    padding-top:auto; 
+}
+.brown_line #icon_img{
+    padding-left:20%;
+}
+.white_line #icon_img{
+    padding-right:20%;
+}
+.white_line{
+    color:#422b1f;
+    background-color:rgb(247, 243, 245, 0.8);
+}
+.brown_line a{
+    color:#f5e2ed;
+    text-decoration: underline;
+}
+.white_line a{
+    color:#422b1f;
+    text-decoration: underline;
 }
 /* Time Line */
 #timeline {
@@ -214,8 +295,17 @@ html, body {
       display: flex;
       flex-direction: column;
   }
+  #road_title{
+    font-family: 'Lobster';
+    font-size: 30px;
+    color:#f5e2ed;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    background-color: #422b1f;
+  }
   #car{
-      height: 50%;
+      height: 47.5%;
       width: 100%;
       background-image: url('http://i.dailymail.co.uk/i/pix/2014/02/03/article-2551025-1B2B755200000578-629_964x698.jpg');
       background-position: center;
@@ -223,7 +313,7 @@ html, body {
       background-size: cover;
   }
   #bus{
-    height: 50%;
+    height: 47.5%;
     width: 100%;
     background-image: url("img/forest_bus.jpg");
     background-position: center;

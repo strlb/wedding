@@ -11,7 +11,7 @@ $(document).ready(function(){
       e.preventDefault();
     });
 
-    if(currentSectionIndex === 3){
+    if(currentSectionIndex === 4){
       $(document).find(".form-wrapper .section_form").first().addClass("is-active");
       $(document).find(".steps li").first().addClass("is-active");
     }
