@@ -1,12 +1,15 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     background-color: white;
-    overflow:hidden;
+    overflow: hidden;
 }
 
+
 /*-----Welcome----*/
-     #welcome {
+
+#welcome {
     background-image: url("http://jakartasearch.com/wp-content/uploads/2018/01/free-outdoor-wedding-venues-northern-ca-2-fresh-venue-goals-victoria-carlson-lindsay-eugene-redwoods-northern-of-free-outdoor-wedding-venues-northern-ca-2.jpg");
     height: 100%;
     background-position: center;
@@ -15,53 +18,65 @@ html, body {
     position: relative;
 }
 
-#logo{
+#logo {
     font-family: 'Oleo Script';
     font-size: 40px;
-    color:#f5e2ed;
+    color: #f5e2ed;
     text-align: center;
     width: 100%;
     padding-top: 10%;
 }
+
+
 /* @media (max-width: 620px) {
     #logo{
         padding-top: 20%;
     }
 } */
+
+
 /* ====================  */
+
+
 /*      About page       */
+
 #about {
-    background-color:#f7f3f5;
+    background-color: #f7f3f5;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-#about_title{
+
+#about_title {
     text-align: center;
     width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
-#about_title p{
+
+#about_title p {
     font-family: 'Lobster';
     font-size: 40px;
     color: #422b1f;
 }
-#about_body{
+
+#about_body {
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
     text-align: center;
     line-height: 1.5;
 }
-#about_body p{
+
+#about_body p {
     font-family: 'Lobster';
     font-size: 20px;
     color: #422b1f;
 }
-#about_time{
+
+#about_time {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
@@ -70,10 +85,11 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
 }
-.time_round{
-    border:8px solid #422b1f;
+
+.time_round {
+    border: 8px solid #422b1f;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -81,18 +97,23 @@ html, body {
     font-size: 25px;
     line-height: 1;
     text-align: center;
-    color:white;
+    color: white;
     background-image: url("https://previews.123rf.com/images/romasph/romasph1307/romasph130700204/20971906-radial-cracks-of-sawed-old-wood-macro.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.time_span{
+
+.time_span {
     padding-top: 33%;
 }
+
+
 /*For Guests*/
-#guests{
-    background-image: url('');
+
+#guests {
+    /* background-color: #f7f3f5; */
+    background-image: url("https://mmehappy.com/wp-content/uploads/2017/03/enchanted-forest-wedding-theme-venue-forest-wedding-decorations-ideas-table-decorations.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,85 +123,140 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
-#guests_title{
+
+#guests_title {
+    background-color: #f7f3f5;
     font-family: 'Lobster';
     font-size: 40px;
-    color:#422b1f;
+    color: #422b1f;
     text-align: center;
     width: 100%;
     height: 60px;
-    padding-top:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-#guests_body{
+
+#guests_body {
+    background-color: rgb(247, 243, 245, 0.8);
+    /* background-color: #f7f3f5; */
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
-.line{
+
+.lines {
+    width: 23%;
+    height: 100%;
+}
+
+.lines_middle {
+    width: 5%;
+    height: 100%;
+}
+
+.line_title {
     width: 100%;
     height: 20%;
-    display: flex;
-    vertical-align: middle;
 }
-.guests_text{
-    height: 100%;
-    width: 80%;
+
+.line_text {
+    font-family: 'Lobster';
+    font-size: 20px;
+    color: #422b1f;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    padding-top: 10px;
+}
+
+.line_text a {
+    text-decoration: underline;
+}
+
+.line_text a:hover {
+    cursor: pointer;
+}
+
+.line_icon {
+    /* background-color: red; */
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#line_icon_1 {
+    background-image: url("img/png/house.png");
+}
+
+#line_icon_2 {
+    background-image: url("img/png/greeting-card.png");
+}
+
+#line_icon_3 {
+    background-image: url("img/png/roses2.png");
+}
+
+
+/* .line_img {
+    width: 100%;
+    height: 62.5%;
+} */
+
+.line_bottom {
+    width: 100%;
+    height: 20%;
+}
+
+
+/* Dress colors -> */
+
+#guests_dress {
+    width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
 }
-.for_middle{
-    height: 100%;
-    width: 33%;
-}
-.guests_text p{
+
+#dress_title {
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
     font-family: 'Lobster';
+    background-color: #422b1f;
     font-size: 20px;
+    color: #f7f3f5;
     text-align: center;
 }
-.brown_line{
-    color:#f5e2ed;
-    background-color: rgb(66, 43, 31, 0.8);
+
+#dress_content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
 }
-.guests_icon{
+
+.dress_colors {
+    width: 10%;
     height: 100%;
-    width: 20%;
-    /* border-radius: 50% */ 
 }
-#icon_img{
-    width: 180px;
-    height:180px;
-	height: auto;
-    padding-top:auto; 
-}
-.brown_line #icon_img{
-    padding-left:20%;
-}
-.white_line #icon_img{
-    padding-right:20%;
-}
-.white_line{
-    color:#422b1f;
-    background-color:rgb(247, 243, 245, 0.8);
-}
-.brown_line a{
-    color:#f5e2ed;
-    text-decoration: underline;
-}
-.white_line a{
-    color:#422b1f;
-    text-decoration: underline;
-}
+
+
 /* Time Line */
+
 #timeline {
     display: flex;
     background-color: #031625;
-  }
-  #timeline:hover .tl-item {
+}
+
+#timeline:hover .tl-item {
     width: 23.3333%;
-  }
-  
-  .tl-item {
+}
+
+.tl-item {
     transform: translate3d(0, 0, 0);
     position: relative;
     width: 25%;
@@ -189,8 +265,10 @@ html, body {
     color: #fff;
     overflow: hidden;
     transition: width 0.5s ease;
-  }
-  .tl-item:before, .tl-item:after {
+}
+
+.tl-item:before,
+.tl-item:after {
     transform: translate3d(0, 0, 0);
     content: "";
     position: absolute;
@@ -198,40 +276,47 @@ html, body {
     top: 0;
     width: 100%;
     height: 100%;
-  }
-  .tl-item:after {
+}
+
+.tl-item:after {
     background: rgba(3, 22, 37, 0.85);
     opacity: 1;
     transition: opacity 0.5s ease;
-  }
-  .tl-item:before {
+}
+
+.tl-item:before {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
     z-index: 1;
     opacity: 0;
     transform: translate3d(0, 0, 0) translateY(50%);
     transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  .tl-item:hover {
+}
+
+.tl-item:hover {
     width: 30% !important;
-  }
-  .tl-item:hover:after {
+}
+
+.tl-item:hover:after {
     opacity: 0;
-  }
-  .tl-item:hover:before {
+}
+
+.tl-item:hover:before {
     opacity: 1;
     transform: translate3d(0, 0, 0) translateY(0);
     transition: opacity 1s ease, transform 1s ease 0.25s;
-  }
-  .tl-item:hover .tl-content {
+}
+
+.tl-item:hover .tl-content {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.75s ease 0.5s;
-  }
-  .tl-item:hover .tl-bg {
+}
+
+.tl-item:hover .tl-bg {
     filter: grayscale(0);
-  }
-  
-  .tl-content {
+}
+
+.tl-content {
     transform: translate3d(0, 0, 0) translateY(25px);
     position: relative;
     z-index: 1;
@@ -239,38 +324,41 @@ html, body {
     margin: 0 1.618em;
     top: 55%;
     opacity: 0;
-  }
-  .tl-content h1 {
+}
+
+.tl-content h1 {
     font-family: 'Lobster';
     text-transform: uppercase;
     color: #422b1f;
     background-color: #f7f3f5;
     border-radius: 3px;
     padding-top: 2%;
-    padding-bottom: 2%; 
+    padding-bottom: 2%;
     font-size: 1.44rem;
     font-weight: normal;
-  }
-  .tl-content p {
+}
+
+.tl-content p {
     line-height: 1.5;
     padding-top: 2%;
     font-family: 'Philosopher';
-  }
-  
-  .tl-year {
+}
+
+.tl-year {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
-  }
-  .tl-year p {
+}
+
+.tl-year p {
     font-family: 'Lobster';
     font-size: 1.728rem;
     line-height: 0;
-  }
-  
-  .tl-bg {
+}
+
+.tl-bg {
     transform: translate3d(0, 0, 0);
     position: absolute;
     width: 100%;
@@ -281,38 +369,45 @@ html, body {
     background-position: center center;
     transition: filter 0.5s ease;
     filter: grayscale(100%);
-  }
-  /* How Come */
-  #how_come{
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-  }
-  #road_info{
-      height: 100%;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-  }
-  #road_title{
+}
+
+
+/* How Come */
+
+#how_come {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#road_info {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#road_title {
     font-family: 'Lobster';
     font-size: 30px;
-    color:#f5e2ed;
+    color: #f5e2ed;
     text-align: center;
     width: 100%;
     height: 5%;
     background-color: #422b1f;
-  }
-  #car{
-      height: 47.5%;
-      width: 100%;
-      background-image: url('http://i.dailymail.co.uk/i/pix/2014/02/03/article-2551025-1B2B755200000578-629_964x698.jpg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  #bus{
+}
+
+#car {
+    height: 47.5%;
+    width: 100%;
+    background-image: url('http://i.dailymail.co.uk/i/pix/2014/02/03/article-2551025-1B2B755200000578-629_964x698.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bus {
     height: 47.5%;
     width: 100%;
     background-image: url("img/forest_bus.jpg");
@@ -320,26 +415,33 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.shadow{
+
+.shadow {
     height: 100%;
-    width:100%;
+    width: 100%;
     background-color: rgb(66, 43, 31, 0.7);
 }
-.how_info{
+
+.how_info {
     width: 100%;
     padding-top: 25%;
 }
-.how_info p:first-child{
+
+.how_info p:first-child {
     font-family: 'Lobster';
     font-size: 20px;
     color: white;
     text-align: center;
 }
-.how_info p:nth-child(2n+3){
+
+.how_info p:nth-child(2n+3) {
     font-family: 'Philosopher';
     font-size: 16px;
     color: white;
     text-align: center;
 }
-  /* ======== */
+
+
+/* ======== */
+
 ;
